@@ -18,5 +18,14 @@ public class Rectangle
         this.width = width;
         this.height = height; 
     }
+    
+    public boolean equals(Object obj)
+    {
+        Rectangle rec = (Rectangle)obj;
+        if(this.width * this.height == rec.width * rec.height)
+            return true;
+        else 
+            return false; 
+    }
 
 }
